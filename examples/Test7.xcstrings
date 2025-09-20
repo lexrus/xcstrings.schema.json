@@ -1,0 +1,113 @@
+{
+  "version" : "1.0",
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld Product(s) Ordered": {
+      "comment": "Indicates the number of products ordered, with device-specific variations",
+      "localizations": {
+        "en": {
+          "variations": {
+            "device": {
+              "applewatch": {
+                "variations": {
+                  "plural": {
+                    "one": {
+                      "stringUnit": {
+                        "state": "translated",
+                        "value": "%lld Product ordered (Apple Watch)"
+                      }
+                    },
+                    "other": {
+                      "stringUnit": {
+                        "state": "translated",
+                        "value": "%lld Products ordered (Apple Watch)"
+                      }
+                    }
+                  }
+                }
+              },
+              "ipad": {
+                "variations": {
+                  "plural": {
+                    "one": {
+                      "stringUnit": {
+                        "state": "translated",
+                        "value": "%lld Product ordered (iPad)"
+                      }
+                    },
+                    "other": {
+                      "stringUnit": {
+                        "state": "translated",
+                        "value": "%lld Products ordered (iPad)"
+                      }
+                    }
+                  }
+                }
+              },
+              "iphone": {
+                "variations": {
+                  "plural": {
+                    "one": {
+                      "stringUnit": {
+                        "state": "translated",
+                        "value": "%lld Product ordered (iPhone)"
+                      }
+                    },
+                    "other": {
+                      "stringUnit": {
+                        "state": "translated",
+                        "value": "%lld Products ordered (iPhone)"
+                      }
+                    }
+                  }
+                }
+              },
+              "mac": {
+                "variations": {
+                  "plural": {
+                    "one": {
+                      "stringUnit": {
+                        "state": "translated",
+                        "value": "%lld Product ordered (Mac)"
+                      }
+                    },
+                    "other": {
+                      "stringUnit": {
+                        "state": "translated",
+                        "value": "%lld Products ordered (Mac)"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "fr": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld produit(s) commandé(s)"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld produits commandés"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld produit commandé"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

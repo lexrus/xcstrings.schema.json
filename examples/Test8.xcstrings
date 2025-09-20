@@ -1,0 +1,502 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld Product(s) Ordered" : {
+      "comment" : "Indicates the number of products ordered, with device-specific variations",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "device" : {
+              "appletv" : {
+                "variations" : {
+                  "plural" : {
+                    "one" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld Apple TV ordered"
+                      }
+                    },
+                    "other" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld Apple TVs ordered"
+                      }
+                    }
+                  }
+                }
+              },
+              "applevision" : {
+                "variations" : {
+                  "plural" : {
+                    "one" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld Apple Vision ordered"
+                      }
+                    },
+                    "other" : {
+                      "stringUnit" : {
+                        "state" : "needs_review",
+                        "value" : "%lld Apple Visions ordered"
+                      }
+                    }
+                  }
+                }
+              },
+              "applewatch" : {
+                "variations" : {
+                  "plural" : {
+                    "one" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld Apple Watch ordered"
+                      }
+                    },
+                    "other" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld Apple Watches ordered"
+                      }
+                    }
+                  }
+                }
+              },
+              "ipad" : {
+                "variations" : {
+                  "plural" : {
+                    "one" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld iPad ordered"
+                      }
+                    },
+                    "other" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld iPads ordered"
+                      }
+                    }
+                  }
+                }
+              },
+              "iphone" : {
+                "variations" : {
+                  "plural" : {
+                    "one" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld iPhone ordered"
+                      }
+                    },
+                    "other" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld iPhones ordered"
+                      }
+                    }
+                  }
+                }
+              },
+              "ipod" : {
+                "variations" : {
+                  "plural" : {
+                    "one" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld iPod ordered"
+                      }
+                    },
+                    "other" : {
+                      "stringUnit" : {
+                        "state" : "needs_review",
+                        "value" : "%lld iPods ordered"
+                      }
+                    }
+                  }
+                }
+              },
+              "mac" : {
+                "variations" : {
+                  "plural" : {
+                    "one" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "%lld Mac ordered"
+                      }
+                    },
+                    "other" : {
+                      "stringUnit" : {
+                        "state" : "needs_review",
+                        "value" : "%lld Macs ordered"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "device" : {
+              "appletv" : {
+                "variations" : {
+                  "plural" : {
+                    "few" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "已订购 %lld 台 Apple TV"
+                      }
+                    },
+                    "many" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "已订购 %lld 台 Apple TV"
+                      }
+                    },
+                    "one" : {
+                      "stringUnit" : {
+                        "state" : "translated",
+                        "value" : "已订购 %lld 台 Apple TV"
+                      }
+                    }
+                  }
+                }
+              },
+              "applevision" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "已订购 %lld 台 Apple Vision"
+                }
+              },
+              "ipod" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "已订购 %lld 个 iPod"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "已订购 %lld 台设备"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "users_bought_devices" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "substitutions" : {
+            "iphone_devices" : {
+              "argNum" : 3,
+              "formatSpecifier" : "llu",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "an iPhone"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "needs_review",
+                      "value" : "%arg iPhones"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "a pair of iPhones"
+                    }
+                  }
+                }
+              }
+            },
+            "iphone_users" : {
+              "argNum" : 1,
+              "formatSpecifier" : "llu",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "An iPhone user"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg iPhone users"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "A couple of iPhone users"
+                    }
+                  }
+                }
+              }
+            },
+            "mac_devices" : {
+              "argNum" : 3,
+              "formatSpecifier" : "llu",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "an Mac"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg  Macs"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "a pair of Mac"
+                    }
+                  }
+                }
+              }
+            },
+            "mac_users" : {
+              "argNum" : 1,
+              "formatSpecifier" : "llu",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "An Mac user"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg Mac users"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "A couple of Mac users"
+                    }
+                  }
+                }
+              }
+            },
+            "money" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lf",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg dollar"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg dollars"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "variations" : {
+            "device" : {
+              "iphone" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%#@iphone_users@ spent %#@money@ to buy %#@iphone_devices@"
+                }
+              },
+              "mac" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%#@mac_users@ spent %#@money@ to buy %#@mac_devices@"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Someone spent some money to buy some devices"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "substitutions" : {
+            "iphone_devices" : {
+              "argNum" : 3,
+              "formatSpecifier" : "llu",
+              "variations" : {
+                "plural" : {
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "new",
+                      "value" : "%arg iPhones"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "needs_review",
+                      "value" : "一对 iPhones"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "needs_review",
+                      "value" : "%arg iPhones"
+                    }
+                  }
+                }
+              }
+            },
+            "iphone_users" : {
+              "argNum" : 1,
+              "formatSpecifier" : "llu",
+              "variations" : {
+                "plural" : {
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg iPhone 用户"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "一对 iPhone 用户"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "没有人"
+                    }
+                  }
+                }
+              }
+            },
+            "mac_devices" : {
+              "argNum" : 3,
+              "formatSpecifier" : "llu",
+              "variations" : {
+                "plural" : {
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "needs_review",
+                      "value" : "一批苹果电脑"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "needs_review",
+                      "value" : "%arg 苹果电脑"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "needs_review",
+                      "value" : "空气"
+                    }
+                  }
+                }
+              }
+            },
+            "mac_users" : {
+              "argNum" : 1,
+              "formatSpecifier" : "llu",
+              "variations" : {
+                "plural" : {
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg 苹果用户"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "一对苹果用户"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "没有人"
+                    }
+                  }
+                }
+              }
+            },
+            "money" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lf",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "一美元"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg 美元"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "免费"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "variations" : {
+            "device" : {
+              "iphone" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%#@iphone_users@花%#@money@买了%#@iphone_devices@"
+                }
+              },
+              "mac" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%#@mac_users@花%#@money@买了%#@mac_devices@"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "一些人花钱买了一些设备"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
