@@ -193,7 +193,14 @@
             "type": "object",
             "properties": {
                 "formatSpecifier": {
-                    "type": "string"
+                    "type": "string",
+                    "enum": [
+                        "@",
+                        "ld",
+                        "lld",
+                        "llu",
+                        "lf"
+                    ]
                 },
                 "argNum": {
                     "type": "integer",
