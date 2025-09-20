@@ -2,6 +2,8 @@
 
 A JSON Schema and validation helper for Apple's `.xcstrings` string catalog files. The schema mirrors the structure observed in real-world catalogs and can be used with [`jsonschema`](https://python-jsonschema.readthedocs.io/) or any compatible validator to ensure catalogs remain well-formed.
 
+> IMPORTANT: The included schema may be out of date; verify against your catalogs before relying on it.
+
 ## Project Layout
 
 - `examples/` — sample `.xcstrings` catalogs gathered from various scenarios.
