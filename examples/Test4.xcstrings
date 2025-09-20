@@ -1,0 +1,41 @@
+{
+  "version" : "1.0",
+ "sourceLanguage" : "en",
+ "strings" : {
+	"I find your lack of faith disturbing." : {
+		"extractionState" : "stale",
+		"localizations" : {
+			"el" : {
+				"stringUnit" : {
+					"state" : "translated",
+					"value" : "Βρίσκω ενοχλητική την έλλειψη πίστης σας."
+				}
+			},
+			"en" : {
+				"stringUnit" : {
+				"state" : "translated",
+				"value" : "I find your lack of faith disturbing."
+				}
+			}
+		}
+	},
+	"I beg your pardon." : {
+		"extractionState" : "stale",
+		"localizations" : {
+			"el" : {
+				"stringUnit" : {
+					"state" : "translated",
+					"value" : "Σας παρακαλώ."
+				}
+			},
+			"en" : {
+				"stringUnit" : {
+				"state" : "translated",
+				"value" : "I beg your pardon."
+				}
+			}
+		}
+	}
+ },
+ "version" : "1.0"
+}

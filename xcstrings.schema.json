@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/xcstrings.schema.json",
+  "title": "XCStrings Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "sourceLanguage",
+    "strings"
+  ],
+  "properties": {
+    "formatVersion": {
+      "type": ["string", "integer"],
+      "description": "Optional format version emitted by some tooling."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$"
+    },
+    "sourceLanguage": {
+      "type": "string",
+      "pattern": "^[A-Za-z]{2}(-[A-Za-z0-9]+)*$"
+    },
+    "strings": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/$defs/stringEntry"
+      }
+    }
+  },
+  "$defs": {
+    "stringEntry": {
+      "type": "object",
+      "properties": {
+        "comment": {
+          "type": "string"
+        },
+        "extractionState": {
+          "type": "string",
+          "enum": ["manual", "stale", "extracted"]
+        },
+        "shouldTranslate": {
+          "type": "boolean"
+        },
+        "localizations": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/localization"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "localization": {
+      "type": "object",
+      "properties": {
+        "stringUnit": {
+          "$ref": "#/$defs/stringUnit"
+        },
+        "variations": {
+          "$ref": "#/$defs/variationSet"
+        },
+        "substitutions": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/substitution"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "anyOf": [
+        { "required": ["stringUnit"] },
+        { "required": ["variations"] }
+      ]
+    },
+    "stringUnit": {
+      "type": "object",
+      "required": ["state", "value"],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": ["translated", "needs_review", "new", "missing", "untranslated"]
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "variationSet": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "minProperties": 1,
+        "additionalProperties": {
+          "$ref": "#/$defs/variationValue"
+        }
+      }
+    },
+    "variationValue": {
+      "type": "object",
+      "properties": {
+        "stringUnit": {
+          "$ref": "#/$defs/stringUnit"
+        },
+        "variations": {
+          "$ref": "#/$defs/variationSet"
+        },
+        "substitutions": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/substitution"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "anyOf": [
+        { "required": ["stringUnit"] },
+        { "required": ["variations"] }
+      ]
+    },
+    "substitution": {
+      "type": "object",
+      "properties": {
+        "formatSpecifier": {
+          "type": "string"
+        },
+        "argNum": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stringUnit": {
+          "$ref": "#/$defs/stringUnit"
+        },
+        "variations": {
+          "$ref": "#/$defs/variationSet"
+        }
+      },
+      "additionalProperties": false,
+      "anyOf": [
+        { "required": ["stringUnit"] },
+        { "required": ["variations"] }
+      ]
+    }
+  }
+}
