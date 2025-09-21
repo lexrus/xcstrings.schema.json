@@ -205,6 +205,116 @@
                 }
             ]
         },
+        "pluralVariationValue": {
+            "type": "object",
+            "properties": {
+                "stringUnit": {
+                    "$ref": "#/$defs/stringUnit"
+                },
+                "variations": {
+                    "$ref": "#/$defs/pluralNestedVariationSet"
+                },
+                "substitutions": {
+                    "type": "object",
+                    "minProperties": 1,
+                    "additionalProperties": {
+                        "$ref": "#/$defs/substitution"
+                    }
+                }
+            },
+            "additionalProperties": false,
+            "anyOf": [
+                {
+                    "required": [
+                        "stringUnit"
+                    ]
+                },
+                {
+                    "required": [
+                        "variations"
+                    ]
+                }
+            ]
+        },
+        "deviceVariationValue": {
+            "type": "object",
+            "properties": {
+                "stringUnit": {
+                    "$ref": "#/$defs/stringUnit"
+                },
+                "variations": {
+                    "$ref": "#/$defs/deviceNestedVariationSet"
+                },
+                "substitutions": {
+                    "type": "object",
+                    "minProperties": 1,
+                    "additionalProperties": {
+                        "$ref": "#/$defs/substitution"
+                    }
+                }
+            },
+            "additionalProperties": false,
+            "anyOf": [
+                {
+                    "required": [
+                        "stringUnit"
+                    ]
+                },
+                {
+                    "required": [
+                        "variations"
+                    ]
+                }
+            ]
+        },
+        "pluralNestedVariationSet": {
+            "type": "object",
+            "minProperties": 1,
+            "propertyNames": {
+                "pattern": "^[A-Za-z_][A-Za-z0-9_-]*$"
+            },
+            "additionalProperties": {
+                "$ref": "#/$defs/variationAxis"
+            },
+            "not": {
+                "required": [
+                    "device"
+                ]
+            }
+        },
+        "deviceNestedVariationSet": {
+            "type": "object",
+            "minProperties": 1,
+            "propertyNames": {
+                "pattern": "^[A-Za-z_][A-Za-z0-9_-]*$"
+            },
+            "additionalProperties": {
+                "$ref": "#/$defs/variationAxis"
+            },
+            "allOf": [
+                {
+                    "if": {
+                        "required": [
+                            "plural"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "plural": {
+                                "$ref": "#/$defs/pluralVariationAxis"
+                            }
+                        }
+                    }
+                },
+                {
+                    "not": {
+                        "required": [
+                            "device"
+                        ]
+                    }
+                }
+            ]
+        },
         "substitution": {
             "type": "object",
             "properties": {
@@ -267,7 +377,7 @@
                 ]
             },
             "additionalProperties": {
-                "$ref": "#/$defs/variationValue"
+                "$ref": "#/$defs/pluralVariationValue"
             }
         },
         "deviceVariationAxis": {
@@ -286,7 +396,7 @@
                 ]
             },
             "additionalProperties": {
-                "$ref": "#/$defs/variationValue"
+                "$ref": "#/$defs/deviceVariationValue"
             }
         }
     }
