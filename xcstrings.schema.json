@@ -155,6 +155,22 @@
                             }
                         }
                     }
+                },
+                {
+                    "not": {
+                        "allOf": [
+                            {
+                                "required": [
+                                    "plural"
+                                ]
+                            },
+                            {
+                                "required": [
+                                    "device"
+                                ]
+                            }
+                        ]
+                    }
                 }
             ]
         },
